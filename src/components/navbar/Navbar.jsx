@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './navbar.module.css';
+import Image from 'next/image';
+import Logo from 'public/ruwise_logo.png';
 
 const links = [
   {
@@ -48,7 +50,7 @@ const Navbar = () => {
       <div className={styles.logoMenuWrapper}>
         <div>
           <Link href="/" className={styles.logo}>
-            RUWISE
+          <Image src={Logo} alt="logo"  className={styles.img}/>
           </Link>
         </div>
         <div>
