@@ -10,13 +10,13 @@ const About = () => {
         <Image src="https://static.vecteezy.com/system/resources/previews/007/360/793/non_2x/a-technician-is-doing-regular-maintenance-on-the-generator-engine-free-photo.jpg"
          fill={true} alt='' className={styles.img}/>
          <div className={styles.imgText}>
-           <h1 className={styles.imgTitle}>Engineers @there Best</h1>
+           <h1 className={styles.imgTitle}>Engineers @their best</h1>
            <h2 className={styles.imgDesc}>Handcrafting award winning engineer experience</h2>
          </div>
       </div>
       <div className={styles.textContainer}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Who are We?</h1>
+        <h1 className={styles.title}>Who are we?</h1>
         <p className={styles.desc}>
           Id excepteur mollit consequat ut reprehenderit exercitation. Ullamco aliquip do exercitation cillum 
           voluptate nisi id consectetur amet commodo minim.Ex non non nostrud qui ut occaecat magna reprehenderit pariatur eiusmod consectetur.d enim cillum cupidatat fugiat labore elit est est. Ad quis

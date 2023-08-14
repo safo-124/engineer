@@ -1,26 +1,100 @@
-.container{
-    height: 100px;
-    display:    flex;
+.container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo{
-    font-weight: bolder;
-    font-size: 22px;
-}
-
-.links{
+    padding: 20px;
+  
+  }
+  
+  .logoMenuWrapper {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .burgerButton {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    z-index: 1000;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+  .links {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.logout{
-    padding: 5px;
-    border: none;
-    background-color: #FFA500    ;
+  }
+  
+  .link {
     color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .logout {
+    background-color: transparent;
+    color: white;
+    border: none;
     cursor: pointer;
-    border-radius: 3px;
-}
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .burgerButton {
+      display: block;
+    }
+  
+    .links {
+      position: fixed;
+      top: 0;
+      right: -300px; 
+      height: 100vh;
+      flex-direction: column;
+      gap: 30px;
+      background-color: black;
+      padding: 20px;
+      transition: 0.5s;
+      z-index: 9999;
+    }
+  
+    .links.open {
+      right: 0;
+    }
+  
+    .link {
+      font-size: 24px;
+    }
+  
+    .logout {
+      font-size: 24px;
+    }
+    .logoMenuWrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .logo {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+   
+  }
+  

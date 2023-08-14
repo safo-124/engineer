@@ -1,8 +1,11 @@
 .container{
-    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    bottom: 0;
+   
 }
 
 .social{
@@ -14,4 +17,27 @@
 .icon{
     opacity: 0.6;
     cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 10px;
+    }
+    .item{
+        font-size: 12px;
+    }
+    
+    .social{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .icon{
+        opacity: 0.6;
+        cursor: pointer;
+    }
 }

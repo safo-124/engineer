@@ -1,7 +1,8 @@
 .container{
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 150px;
+  padding: 30px;
 }
 
 .item {
@@ -39,3 +40,45 @@
   font-weight: 300;
 }
 
+@media screen and (max-width: 700px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img{
+    height: 200px;
+    object-fit: cover;
+    animation: move 2s infinite ease alternate;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateY(-15px);
+    }
+    to {
+      transform: translateY(0px) scale(1.03);
+    }
+  }
+  
+  .title {
+    font-size: 42px;
+    background: linear-gradient(to bottom, #FFA500, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .desc{
+    font-size: 24px;
+    font-weight: 300;
+  }     
+}
