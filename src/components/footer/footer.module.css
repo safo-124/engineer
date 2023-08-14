@@ -19,6 +19,10 @@
     opacity: 0.6;
     cursor: pointer;
 }
+.itemSalle{
+    font-size: 10px;
+    text-align: right;
+ }
 @media screen and (max-width:700px) {
     .container{
         display: flex;
@@ -26,9 +30,16 @@
         justify-content: center;
         position: relative;
         bottom: 10px;
+       
     }
     .item{
-        font-size: 12px;
+        font-size: 8px;
+        
+        width: 100%;
+    }
+    .itemSalle{
+       font-size: 8px;
+       text-align: right;
     }
     
     .social{

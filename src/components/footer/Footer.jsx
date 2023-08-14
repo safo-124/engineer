@@ -5,8 +5,9 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
+    <div>
     <div className={styles.container}>
-      <div className={styles.item}>@2023 RUWISE. All rights reserved. Developed By SALLE</div>
+      <div className={styles.item}>@2023 RUWISE. All rights reserved. </div>
       <div className={styles.social}>
         <Link href="/">
           <Image src="/1.png" width={15} height={15} className={styles.icon} alt="safo_fb"/>
@@ -21,6 +22,8 @@ const Footer = () => {
           <Image src="/4.png" width={15} height={15} className={styles.icon} alt="safo"/>
         </Link>
       </div>
+    </div>
+    <div className={styles.itemSalle}>Developed By SALLE</div>
     </div>
   )
 }
