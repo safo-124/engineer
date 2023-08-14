@@ -35,10 +35,11 @@
 
 .title {
   font-size: 72px;
-  background: linear-gradient(to bottom, #FFA500, #bbb);
+  background: linear-gradient(to bottom, #891a04, #bbb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 .desc{
   font-size: 24px;
@@ -84,9 +85,7 @@
   
   .title {
     font-size: 42px;
-    background: linear-gradient(to bottom, #FFA500, #bbb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  
   }
   
   .desc{
