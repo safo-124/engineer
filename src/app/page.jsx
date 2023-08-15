@@ -136,7 +136,7 @@ export default function Home() {
           </div>
           <div className={styles.testimonialCard}>
             <p className={styles.testimonialText}>
-              "I'm incredibly impressed with the expertise and efficiency of Ruwise Electrical Services. They transformed our lighting design, creating a comfortable and energy-efficient environment in our home. I highly recommend their services."
+              "I am incredibly impressed with the expertise and efficiency of Ruwise Electrical Services. They transformed our lighting design, creating a comfortable and energy-efficient environment in our home. I highly recommend their services."
             </p>
             <p className={styles.testimonialName}>Jenny Smith</p>
           </div>
