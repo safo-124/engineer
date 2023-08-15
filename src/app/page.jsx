@@ -130,19 +130,19 @@ export default function Home() {
         <div className={styles.testimonials}>
           <div className={styles.testimonialCard}>
             <p className={styles.testimonialText}>
-              "Ruwise Electrical Services exceeded my expectations with their professionalism and attention to detail. From the initial consultation to the final installation, they demonstrated a deep understanding of my electrical needs."
+              Ruwise Electrical Services exceeded my expectations with their professionalism and attention to detail. From the initial consultation to the final installation, they demonstrated a deep understanding of my electrical needs.
             </p>
             <p className={styles.testimonialName}>John Doe</p>
           </div>
           <div className={styles.testimonialCard}>
             <p className={styles.testimonialText}>
-              "I am incredibly impressed with the expertise and efficiency of Ruwise Electrical Services. They transformed our lighting design, creating a comfortable and energy-efficient environment in our home. I highly recommend their services."
+              I am incredibly impressed with the expertise and efficiency of Ruwise Electrical Services. They transformed our lighting design, creating a comfortable and energy-efficient environment in our home. I highly recommend their services.
             </p>
             <p className={styles.testimonialName}>Jenny Smith</p>
           </div>
           <div className={styles.testimonialCard}>
             <p className={styles.testimonialText}>
-              "When it comes to electrical solutions, Ruwise is the name I trust. Their team installed a top-notch generator system for my business, ensuring that we remain operational even during power outages. Their dedication to quality is unmatched."
+              When it comes to electrical solutions, Ruwise is the name I trust. Their team installed a top-notch generator system for my business, ensuring that we remain operational even during power outages. Their dedication to quality is unmatched.
             </p>
             <p className={styles.testimonialName}>Michael Johnson</p>
           </div>
@@ -153,9 +153,9 @@ export default function Home() {
         <div className={styles.smallerContainer}>
           
         <div className={styles.item}>
-          <h1 className={styles.titleContact}>We'd Love To Hear From You!</h1>
+          <h1 className={styles.titleContact}>We would love to hear from you!</h1>
           <p className={styles.descContact}>
-            Do you have any message you'd like to leave for us?<br />
+            Do you have any message you would like to leave for us?<br />
             Fill out the form and we would do our best to reach out as soon as possible.
           </p>
         </div>
