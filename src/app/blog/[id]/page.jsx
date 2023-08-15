@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
+import WorkerHall from '/public/workers/worker1.jpg'
+import workerWires from '/public/workers/workerWires.jpg'
 
 const BlogPost = () => {
   return (
@@ -15,7 +17,7 @@ const BlogPost = () => {
             Adipisicing dolore 
           </p>
           <div className={styles.author}>
-            <Image src=""
+            <Image src={WorkerHall}
             alt="pic"
             width={40}
             height={40}
@@ -26,7 +28,7 @@ const BlogPost = () => {
         </div>
         <div className={styles.imageContainer}>
           <Image
-          src=""
+          src={workerWires}
           alt="pic"
           fill={true}
           className={styles.image}/>

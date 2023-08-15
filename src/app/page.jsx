@@ -123,6 +123,7 @@ export default function Home() {
             <h3 className={styles.descService}>Security System Installation</h3>
           </div> 
         </div>
+        <Button url="/portfolio" text="Check Out Our Portfolio!" />
       </div>
         {/*Testimonial section */}
         <div className={styles.testimonialsContainer}>

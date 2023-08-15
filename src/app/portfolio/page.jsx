@@ -1,22 +1,15 @@
 import React from 'react'
 import styles from './page.module.css'
-import Link from 'next/link'
+import Image from 'next/image'
+import WorkerHall from '/public/workers/WorkerHall.jpg'
 
 const Portfolio = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.selectTitle}>Choose a service</h1>
-      <div className={styles.items}>
-        <Link href="/portfolio/illustrations" className={styles.item}>
-          <span className={styles.title}>illustrations</span>
-        </Link>
-        <Link href="/portfolio/Motor" className={styles.item}>
-          <span className={styles.title}>Motor Works</span>
-        </Link>
-        <Link href="/portfolio/Generator" className={styles.item}>
-          <span className={styles.title}>Generator</span>
-        </Link>
-      </div>
+      <h1 className={styles.selectTitle}>Take A Look At Our Previous Projects</h1>
+      <Image src={WorkerHall} alt="pic" 
+        className={styles.image}
+      />
     </div>
   )
 }
