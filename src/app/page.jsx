@@ -17,7 +17,7 @@ import HouseWiring from '../../public/services/housewiring.jpg';
 import Security from '../../public/services/security.jpg';
 import Lighting from '../../public/services/lighting.jpg';
 import PanelBuilding from '../../public/services/panelBuilding.jpg'
-import SolarPanel from '../../public/services/solarPanel.jpg';
+import SolarPanel from '../../public/services/solarpanel.jpg';
 import AboutPic from '../../public/workers/workerSelfie.jpg'
 import Button from '@/components/button/Button';
 
