@@ -1,5 +1,4 @@
-.container {
-}
+
 
 .top {
   display: flex;
@@ -53,9 +52,7 @@
 }
 
 @media screen and (max-width: 1000px){
-  .container {
-  }
-  
+ 
   .top {
     display: flex;
    
