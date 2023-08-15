@@ -3,6 +3,8 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import WorkerHall from '/public/workers/worker1.jpg'
 import workerWires from '/public/workers/workerWires.jpg'
+import PanelBuilding from '/public/services/panelBuilding.jpg'
+import SolarPanel from '/public/services/solarpanel.jpg';
 
 const BlogPost = () => {
   return (
@@ -10,14 +12,14 @@ const BlogPost = () => {
       <div className={styles.top}>
         <div className={styles.info}>
           <h1 className={styles.title}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </h1>
           <p>
             Pariatur reprehenderit sunt veniam laborum reprehenderit nulla proident incididunt voluptate. Aliqua culpa duis non nostrud non et. Lorem ea dolore voluptate adipisicing tempor.
             Adipisicing dolore 
           </p>
           <div className={styles.author}>
-            <Image src={WorkerHall}
+            <Image src={PanelBuilding}
             alt="pic"
             width={40}
             height={40}
@@ -28,7 +30,7 @@ const BlogPost = () => {
         </div>
         <div className={styles.imageContainer}>
           <Image
-          src={workerWires}
+          src={SolarPanel}
           alt="pic"
           fill={true}
           className={styles.image}/>

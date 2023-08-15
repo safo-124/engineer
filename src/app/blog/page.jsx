@@ -2,16 +2,15 @@ import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
-import WorkerHall from '/public/workers/worker1.jpg'
-import workerWires from '/public/workers/workerWires.jpg'
+import Security from '/public/services/security.jpg'
+import Solar from '/public/services/solarpanel.jpg'
 
 const Blog = () => {
   return (
     <div className={styles.mainContainer}>
       <Link href="/blog/testId" className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image src={WorkerHall} alt="pic" 
-            width={400} height={250}
+          <Image src={Security} alt="pic" 
             className={styles.image}
           />
         </div>
@@ -22,8 +21,7 @@ const Blog = () => {
       </Link>
       <Link href="/blog/testId" className={styles.container}>
         <div className={styles.imageContainer}>
-          <Image src={workerWires} alt="pic" 
-            width={400} height={250}
+          <Image src={Solar} alt="pic" 
             className={styles.image}
           />
         </div>
