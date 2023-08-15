@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className={styles.textContainer}>
       <div className={styles.item}>
-        <h1 className={styles.title}>Who are we?</h1>
+        <h1 className={styles.title}>Who We Are</h1>
         <p className={styles.desc}>
           Id excepteur mollit consequat ut reprehenderit exercitation. Ullamco aliquip do exercitation cillum 
           voluptate nisi id consectetur amet commodo minim.Ex non non nostrud qui ut occaecat magna reprehenderit pariatur eiusmod consectetur.d enim cillum cupidatat fugiat labore elit est est. Ad quis
@@ -32,7 +32,7 @@ const About = () => {
         </p>
       </div>
       <div className={styles.item}>
-        <h1 className={styles.title}>What We do?</h1>
+        <h1 className={styles.title}>What We Do</h1>
         <p className={styles.desc}>
         Id excepteur mollit consequat ut reprehenderit exercitation. Ullamco aliquip do exercitation cillum 
           voluptate nisi id consectetur amet commodo minim.Ex non non nostrud qui ut occaecat magna reprehenderit pariatur eiusmod consectetur.d enim cillum cupidatat fugiat labore elit est est. Ad quis
