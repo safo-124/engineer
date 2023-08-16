@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-import WorkerHall from '/public/workers/WorkerHall.jpg';
+import WorkerHall from '/public/workers/workerHall.jpg';
 import workerWires from '/public/workers/workerWires.jpg'
 
 const Portfolio = () => {
