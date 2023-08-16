@@ -5,6 +5,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './navbar.module.css';
 import Image from 'next/image';
 import Logo from 'public/ruwise_logo.png';
+import {usePathname} from 'next/navigation';
+
 
 const links = [
   {
@@ -28,6 +30,7 @@ const links = [
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null); 
 
@@ -68,7 +71,7 @@ const Navbar = () => {
       </div>
       <div className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
         {links.map((link) => (
-          <Link key={link.id} href={link.url} className={styles.link}>
+          <Link key={link.id} href={link.url} className={pathname === link.url ? styles.linkactive : styles.link}>
             {link.title}
           </Link>
         ))}

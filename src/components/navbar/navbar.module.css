@@ -7,7 +7,8 @@
     padding-right: 40px;
   
   }
-  
+   
+
   .logoMenuWrapper {
     display: flex;
     gap: 40px;
@@ -43,14 +44,21 @@
   .links {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
   
-  .link {
+  .link{
     color: white;
-    text-decoration: none;
-    font-size: 16px;
   }
+  .link:hover{
+    color: red;
+  }
+  .linkactive{
+    color: red;
+  }
+
+
+  
   
   .logout {
     background-color: transparent;
