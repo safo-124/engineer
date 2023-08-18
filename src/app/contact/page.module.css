@@ -27,6 +27,8 @@
   animation: move 3s infinite ease alternate;
 }
 
+
+
 @keyframes move {
   from {
     transform: translateY(-15px);
@@ -63,6 +65,31 @@
   justify-content: center;
 }
 
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+  gap: 50px;
+
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.infoText {
+  font-size: 34px;
+}
+
 /* Tablet View */
 @media screen and (max-width: 1000px) {
   .container {
@@ -89,6 +116,31 @@
   .form {
     max-width: 260px;
     justify-content: center;
+  }
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 90px;
+    gap: 50px;
+  
+  }
+  
+  .infoItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 20px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .infoText {
+    font-size: 20px;
   }
 }
 
