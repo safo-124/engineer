@@ -13,15 +13,23 @@ const Contact = () => {
       <div className={styles.contactInfo}>
         <div className={styles.infoItem}>
           <Image src={Phone} alt="Phone" className={styles.icon} />
-          <p className={styles.infoText}>123-456-7890</p>
+          <a href="tel:+233242139453" className={styles.infoText}>+233-242-139-453</a>
         </div>
         <div className={styles.infoItem}>
-          <Image src={Location} alt="Address" className={styles.icon} />
-          <p className={styles.infoText}>123 Main Street, City</p>
-        </div>
+  <Image src={Location} alt="Address" className={styles.icon} />
+  <a
+    href="https://www.google.com/maps/search/?q=PS+GLOBAL+GATE+1,+TEMA"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.infoText}
+  >
+    PS GLOBAL GATE 1, TEMA
+  </a>
+</div>
+
         <div className={styles.infoItem}>
           <Image src={Mail} alt="Email" className={styles.icon} />
-          <p className={styles.infoText}>info@example.com</p>
+          <a href="mailto: ruwiseengineering@gmail.com" className={styles.infoText}>ruwiseengineering@gmail.com</a>
         </div>
       </div>
       <div className={styles.content}>

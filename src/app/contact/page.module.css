@@ -87,7 +87,7 @@
 }
 
 .infoText {
-  font-size: 34px;
+  font-size: 24px;
 }
 
 /* Tablet View */
@@ -130,7 +130,7 @@
     display: flex;
     align-items: center;
     border: 1px solid white;
-    padding: 20px;
+    padding: 5px;
   }
   
   .icon {
@@ -140,7 +140,7 @@
   }
   
   .infoText {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -193,5 +193,8 @@
   .form {
     max-width: 280px;
     gap: 18px;
+  }
+  .infoText{
+    font-size: 14px;
   }
 }
