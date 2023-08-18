@@ -3,13 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
-import Generator from '/public/slideitems/gen.png';
-import Ammeter from '/public/slideitems/ammeter.png';
-import Wires from '/public/slideitems/wires.png';
-import Solar from '/public/slideitems/solar.png';
-import Meter from '/public/slideitems/meter.png';
-import Cctv from '/public/slideitems/cctv.png';
-import Panel from '/public/slideitems/panel.png';
+import SelfieMan from 'public/homepics/selfie-with-friends.jpg';
+import GeneratorShow from 'public/homepics/front-generator.jpg';
+import SittingOnBomb from 'public/homepics/sitting-on-bomb.jpg';
+import TableWork from 'public/homepics/working-on-table.jpg';
+import ThePanel from 'public/homepics/the-panel.jpg';
+import AnotherGenerator from 'public/homepics/another-generator.jpg';
 import Fence from '/public/services/electricFence.webp';
 import Gate from  '/public/services/gate.jpg';
 import Generators from '/public/services/generators.jpg';
@@ -20,13 +19,29 @@ import PanelBuilding from '/public/services/panelBuilding.jpg'
 import SolarPanel from '/public/services/solarpanel.jpg';
 import AboutPic from '/public/workers/workerSelfie.jpg'
 import Button from '@/components/button/Button';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const imagesArray = [Generator, Ammeter, Wires, Solar, Meter, Cctv, Panel];
+
+const imagesArray = [SelfieMan, GeneratorShow, SittingOnBomb, TableWork, ThePanel, AnotherGenerator];
 
 export default function Home() {
-  const [randomImageIndex, setRandomImageIndex] = useState(0);
 
-  useEffect(() => {
+  const sliderSettings = {
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    arrows: true,
+    customPaging: (i) => (
+      <div className={styles.customDot}></div> // Use a custom dot element
+    ),
+  };
+
+
+{/*const [randomImageIndex, setRandomImageIndex] = useState(0);*/}
+
+  {/*useEffect(() => {
     const interval = setInterval(() => {
       const randomIndex = Math.floor(Math.random() * imagesArray.length);
       setRandomImageIndex(randomIndex);
@@ -34,7 +49,7 @@ export default function Home() {
 
     return () => clearInterval(interval); 
   }, []);
-
+*/}
   return (
     <div className={styles.container} id='homepage-container'>
       
@@ -49,9 +64,17 @@ export default function Home() {
           </p>
           <Button url="/contact" text="Hire Us!" />
         </div>
-        <div className={styles.item}>
-          <Image src={imagesArray[randomImageIndex]} alt="Random Hero" className={styles.img} />         
-        </div>
+       
+        <div className={styles. slideItem}>
+  <Slider {...sliderSettings}>
+    {imagesArray.map((image, index) => (
+      <div key={index}>
+        <Image src={image} alt={`Slide ${index}`} className={styles.img} />
+      </div>
+    ))}
+  </Slider>
+</div>      
+      
       </div>
 
         {/*about section */}

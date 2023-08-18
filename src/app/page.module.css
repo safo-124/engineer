@@ -20,13 +20,35 @@
   gap: 50px;
 }
 
-.img{
-  width: 60%;
-  margin-left: 200px;
-  height: 400px;
-  object-fit: cover;
-  animation: move 2s infinite ease alternate;
+.slideItem{
+  max-width: 600px;
 }
+
+.img{
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.slick-slider {
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+  padding: 30px;
+}
+.slick-dots li button {
+  background-color: red;
+}
+
+.customDot {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(255, 255, 255); 
+  border-radius: 50%;
+
+}
+
+
 .imgStandard{
   width: 100%;
   width: 590px;
@@ -35,6 +57,7 @@
   border-radius: 30px;
 }
 
+/*
 @keyframes move {
   from {
     transform: translateY(-15px);
@@ -44,7 +67,16 @@
   }
 }
 
-
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+}
+*/
 
 
 .title {
@@ -168,6 +200,11 @@
     gap: 20px;
     padding: 20px;
   }
+  .slideItem{
+    max-width: 700px;
+    position: relative;
+    
+  }
 
   .smallerContainer {
     display: flex;
@@ -182,11 +219,8 @@
   }
 
   .img {
-    max-width: 200px;
-    max-height: 200px;
+   
     object-fit: cover;
-    animation: move 2s infinite ease alternate;
-    margin-left: 230px;
     width: 100%;
   }
 
@@ -317,6 +351,10 @@
     padding: 20px;
   
   }
+  .slideItem{
+    max-width: 280px;
+    position: relative; 
+  }
   .smallerContainer{
     display: flex;
     flex-direction: column;
@@ -331,11 +369,9 @@
   }
   
   .img{
-    max-width: 200px;
+    max-width: 330px;
     max-height: 200px;
     object-fit: cover;
-    animation: move 2s infinite ease alternate;
-    margin-left: 10px;
     width: 100%;
   }
   
@@ -466,6 +502,11 @@ padding: 20px 0;
     gap: 30px;
     padding: 20px;
   }
+  .slideItem{
+    max-width: 400px;
+    position: relative;    
+    left: 12%;
+  }
 
   .smallerContainer {
     display: flex;
@@ -480,17 +521,13 @@ padding: 20px 0;
   }
 
   .img {
-    max-width: 200px;
-    max-height: 200px;
     object-fit: cover;
-    animation: move 2s infinite ease alternate;
-    margin-left: 200px;
-    width: 100%;
+     width: 100%;
   }
 
   .imgStandard {
-    width: 90%;
-    height: 200px;
+    width: 100%;
+    height: 20%;
     object-fit: cover;
     border-radius: 30px;
   }
