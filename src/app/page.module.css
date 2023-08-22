@@ -199,13 +199,18 @@
 
 /* Tablet View */
 @media screen and (max-width: 1500px) {
+  
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
   }
+
+  
+ 
+
   .slideItem{
     max-width: 700px;
     position: relative;
@@ -225,7 +230,7 @@
   }
 
   .img {
-   
+
     object-fit: cover;
     width: 100%;
   }
@@ -250,15 +255,15 @@
   .servicesContainer {
     margin-top: 40px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 40px;
   }
 
   .descService {
     font-size: 1.0rem;
+    position: relative;
+    right: 49px;
     text-align: center;
+   
   }
 
   .services {
@@ -266,12 +271,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    align-items: center;
+
   }
 
-  .service {
-    padding: 10px;
-    margin: 9px;
+  .service {   
     border-radius: 20px;
   }
 
@@ -418,7 +421,8 @@
 }
 .descService{
   font-size: 1.0rem;
-  text-align: center;
+  position: relative;
+  right: 18px;
 }
 
 .services{
