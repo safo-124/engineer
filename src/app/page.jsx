@@ -57,7 +57,7 @@ export default function Home() {
     <div className={styles.container} id='homepage-container'>
   <div style={{ position: 'relative', width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
     <video autoPlay loop muted style={{ width: '100%', display: 'block' }}>
-      <source src="/land-gen.mp4" type="video/mp4" />
+      <source src="https://firebasestorage.googleapis.com/v0/b/test-app-24d4e.appspot.com/o/land-gen.mp4?alt=media&token=d46ece03-5887-4fd3-96f9-33319117fc5b" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div
