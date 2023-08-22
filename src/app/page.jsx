@@ -17,11 +17,14 @@ import Security from '/public/services/security.jpg';
 import Lighting from '/public/services/lighting.jpg';
 import PanelBuilding from '/public/services/panelBuilding.jpg'
 import SolarPanel from '/public/services/solarpanel.jpg';
-import AboutPic from '/public/workers/workerSelfie.jpg'
+import AboutPic from '/public/workers/workerSelfie.jpg';
 import Button from '@/components/button/Button';
-import Slider from 'react-slick';
+
+import ReactPlayer from 'react-player';
+
+{/*import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick-theme.css';*/}
 
 
 const imagesArray = [SelfieMan, GeneratorShow, SittingOnBomb, TableWork, ThePanel, AnotherGenerator];
@@ -52,7 +55,41 @@ export default function Home() {
 */}
   return (
     <div className={styles.container} id='homepage-container'>
-      
+  <div style={{ position: 'relative', width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
+    <video autoPlay loop muted style={{ width: '100%', display: 'block' }}>
+      <source src="/land.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        // Dark overlay
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      <h1
+        style={{
+          background: 'linear-gradient(to right, #ff4b2b, #ff416c)', // Reddish-white gradient
+          WebkitBackgroundClip: 'text',
+          color: 'transparent',
+          fontSize: '2.5rem',
+          marginBottom: '1rem',
+        }}
+      >
+        
+      </h1>
+      <p style={{ color: '#fff', fontSize: '1.2rem' }}></p>
+    </div>
+  </div>
+
+
          {/*Hero Section */} 
       <div className={styles.smallerContainer}>
         <div className={styles.item}>
@@ -65,15 +102,16 @@ export default function Home() {
           <Button url="/contact" text="Hire Us!" />
         </div>
        
-        <div className={styles. slideItem}>
-  <Slider {...sliderSettings}>
+        {/* <div className={styles. slideItem}>
+  
+ <Slider {...sliderSettings}>
     {imagesArray.map((image, index) => (
       <div key={index}>
         <Image src={image} alt={`Slide ${index}`} className={styles.img} />
       </div>
     ))}
-  </Slider>
-</div>      
+  </Slider> 
+                 </div>      */}
       
       </div>
 
@@ -191,7 +229,7 @@ export default function Home() {
         </form>
         </div>
 
-
+     
 
     </div>
   );

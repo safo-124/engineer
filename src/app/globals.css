@@ -8,8 +8,9 @@ html,
 body {
   background-color: #111;
   color: #bbb;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  
 }
 
 a{
