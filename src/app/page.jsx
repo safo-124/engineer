@@ -57,7 +57,7 @@ export default function Home() {
     <div className={styles.container} id='homepage-container'>
   <div style={{ position: 'relative', width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
     <video autoPlay loop muted style={{ width: '100%', display: 'block' }}>
-      <source src="/land.mp4" type="video/mp4" />
+      <source src="/land-gen.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <div
@@ -67,7 +67,7 @@ export default function Home() {
         left: 0,
         width: '100%',
         height: '100%',
-        // Dark overlay
+        background: 'rgba(0, 0, 0, 0.0)',     // Dark overlay
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -76,14 +76,13 @@ export default function Home() {
     >
       <h1
         style={{
-          background: 'linear-gradient(to right, #ff4b2b, #ff416c)', // Reddish-white gradient
+          background: 'linear-gradient(to bottom, #e7dfde, #ca8282)', // Reddish-white gradient
           WebkitBackgroundClip: 'text',
           color: 'transparent',
-          fontSize: '2.5rem',
+          fontSize: '6.5rem',
           marginBottom: '1rem',
         }}
       >
-        
       </h1>
       <p style={{ color: '#fff', fontSize: '1.2rem' }}></p>
     </div>
