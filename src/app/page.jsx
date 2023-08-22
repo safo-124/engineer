@@ -67,7 +67,7 @@ export default function Home() {
         left: 0,
         width: '100%',
         height: '100%',
-        background: 'rgba(0, 0, 0, 0.0)',     // Dark overlay
+        background: 'rgba(0, 0, 0, 0.5)',     // Dark overlay
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
