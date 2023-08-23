@@ -51,6 +51,10 @@
   text-align: justify;
 }
 
+.container{
+  margin: 30px;
+}
+
 @media screen and (max-width: 1000px){
  
   .top {

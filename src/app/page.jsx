@@ -76,14 +76,7 @@ export default function Home() {
   return (
     <div className={styles.container} id="homepage-container">
       <div className={styles.videoContainer}>
-        <video
-          autoPlay
-          loop
-          muted
-          style={{ width: "100%", display: "flex" }}
-          className={styles.video}
-          id="landing-video"
-        >
+        <video autoPlay loop muted className={styles.video} id="landing-video">
           <source
             src="https://firebasestorage.googleapis.com/v0/b/test-app-24d4e.appspot.com/o/land-gen.mp4?alt=media&token=d46ece03-5887-4fd3-96f9-33319117fc5b"
             type="video/mp4"
@@ -125,8 +118,6 @@ export default function Home() {
               <br /> Your Partner For Electrical Services.
             </h1>
           </div>
-
-          <p style={{ color: "#fff", fontSize: "1.2rem" }}></p>
         </div>
       </div>
 
@@ -152,14 +143,14 @@ export default function Home() {
           <h1>Your Safety, Our Priority</h1>
           <p>
             Elevate efficiency with tailored energy solutions. Minimize costs,
-            maximize sustainability. Let's create an eco-friendly future, one
+            maximize sustainability. Let us create an eco-friendly future, one
             connection at a time.
           </p>
         </div>
         <div className={styles.featuresCard}>
           <h1>Swift Sparks Service</h1>
           <p>
-            Sparks flew? We're on it. Our rapid-response team swiftly
+            Sparks flew? We are on it. Our rapid-response team swiftly
             troubleshoots and repairs, restoring power and confidence—anytime,
             anywhere.{" "}
           </p>
@@ -265,7 +256,6 @@ export default function Home() {
             <h3 className={styles.descService}>Security System Installation</h3>
           </div>
         </div>
-        <Button url="/portfolio" text="Review Our Portfolio" />
       </div>
       {/*Testimonial section */}
       <div className={styles.testimonialsContainer}>

@@ -1,20 +1,20 @@
 .container {
     display: flex;
-    justify-content: space-between;
+    gap: 50%;
     align-items: center;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    position: fixed;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: black;
-    width: 100%;
     z-index: 999;
+    position: sticky;
+    top: 0;
+    width: 100%;
   }
    
 
   .logoMenuWrapper {
     display: flex;
-    gap: 40px;
+    gap: 50px;
   }
   
   .logo {
@@ -59,9 +59,6 @@
   .linkactive{
     color: red;
   }
-
-
-  
   
   .logout {
     background-color: transparent;
@@ -73,15 +70,15 @@
   
   @media screen and (max-width: 1400px) {
     .container {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 30px;
     
     }
+    
     .burgerButton {
       display: block;
     }
   
-    .links {
+    .links {  
       position: fixed;
       top: 0;
       right: -300px; 
@@ -106,7 +103,7 @@
       font-size: 24px;
     }
     .logoMenuWrapper {
-      width: 100%;
+      width: 80%;
       display: flex;
       align-items: center;
      justify-content: space-between;

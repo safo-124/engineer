@@ -43,12 +43,12 @@
 
 @media screen and (max-width: 700px) {
     .container{
-        padding: 30px;
+        padding: 20px;
         width: 100%;
-        
+       
     }
     .imgContainer{
-        width: 100%;
+        width: 90%;
         height: 250px;
         position: relative;
         margin-bottom: 20px;
@@ -93,6 +93,7 @@
         font-size: 14px;
         font-weight: 300;
         text-align: justify;
+        width: 90%;
     }
     
     

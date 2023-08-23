@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
     
   }
   .projectCard {
@@ -87,6 +88,10 @@
   
   .projectSummary {
     color: black;
+  }
+  .selectTitle{
+    text-align: center;
+    margin-top: 20px;
   }
     
   }
