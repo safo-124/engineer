@@ -52,7 +52,8 @@
 }
 
 .container{
-  margin: 30px;
+  margin-top: 90px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1000px){
