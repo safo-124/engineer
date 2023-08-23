@@ -254,7 +254,10 @@
   .featuresContainer {
     margin-top: 59px;
     flex-direction: column;
-    width: 90%;
+    width: 94%;
+    margin-top: -20px;
+    margin-right: 70px;
+    
   }
 
   .featuresCard {
@@ -275,6 +278,7 @@
     gap: 30px;
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 
   .img {
@@ -283,8 +287,10 @@
 
   .imgStandard {
     object-fit: contain;
-    height: 200px;
-    border-radius: 30px;
+    height: 500px;
+    border-radius: 33px;
+    position: relative;
+    right: 140px;
   }
 
   .title {
@@ -297,9 +303,11 @@
 
   /* Services Section */
   .servicesContainer {
-    margin-top: 40px;
+    position: relative;
+    left: 50px;
+    top: 20px;
     width: 100%;
-    margin-left: 40px;
+   
   }
 
   .descService {
@@ -334,7 +342,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .testimonialCard {
@@ -358,11 +366,20 @@
   .titleContact {
     font-size: 32px;
     margin-bottom: 0;
+    margin-left: 30px;
   }
 
   .descContact {
     margin-top: -20px;
     font-size: 18px;
+    margin-left: 30px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin-left: 44px; 
   }
 }
 
